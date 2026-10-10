@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Astroverse — an independent home for original stories, novels, comics, and creative worlds.">
+  <title>Astroverse — A World of My Own</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#home">astroverse<span>.</span></a>
+
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#library">Library</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <a class="nav-button" href="#library">Explore stories ↗</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <p class="eyebrow">AN INDEPENDENT CREATOR'S SPACE</p>
+      <h1>Every idea has<br>a <span>world of its own.</span></h1>
+      <p class="hero-description">
+        Welcome to Astroverse — a home for my stories, novels,
+        comics, imagination, and the worlds I create.
+      </p>
+
+      <div class="hero-actions">
+        <a class="primary-button" href="#library">Explore my library ↗</a>
+        <a class="secondary-button" href="#about">Discover Astroverse</a>
+      </div>
+
+      <div class="hero-note">
+        <span class="status-dot"></span>
+        Original ideas. Unlimited possibilities.
+      </div>
+    </section>
+
+    <section class="library section" id="library">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE COLLECTION</p>
+          <h2>Explore my creations.</h2>
+          <p class="muted">Stories and worlds, collected in one place.</p>
+        </div>
+        <span class="collection-count" id="result-count">6 creations</span>
+      </div>
+
+      <label class="search-box">
+        <span aria-hidden="true">⌕</span>
+        <input
+          id="search-input"
+          type="search"
+          placeholder="Search stories, comics, novels..."
+          aria-label="Search creations"
+        >
+      </label>
+
+      <div class="filters" aria-label="Filter creations">
+        <button class="filter active" data-filter="All">All creations</button>
+        <button class="filter" data-filter="Novel">Novels</button>
+        <button class="filter" data-filter="Comic">Comics</button>
+        <button class="filter" data-filter="Short story">Short stories</button>
+        <button class="filter" data-filter="Poetry">Poetry</button>
+      </div>
+
+      <div class="creation-grid" id="creation-grid">
+        <article class="creation-card" data-category="Comic">
+          <div class="cover cover-vigilante">
+            <span class="cover-tag">COMIC UNIVERSE</span>
+            <span class="cover-symbol">V</span>
+            <span class="cover-title">THE<br>VIGILANTE</span>
+          </div>
+          <div class="card-body">
+            <p class="card-category">COMIC · IN DEVELOPMENT</p>
+            <h3>The Vigilante</h3>
+            <p>A young mind, a city of secrets, and the cost of protecting others.</p>
+            <button class="read-button"
+              data-title="The Vigilante"
+              data-description="A young inventor from Dhaka begins a journey that will challenge his intelligence, his kindness, and his idea of justice."
+              data-status="Comic universe · In development">Explore project ↗</button>
+          </div>
+        </article>
+
+        <article class="creation-card" data-category="Novel">
+          <div class="cover cover-odyssey">
+            <span class="cover-tag">NOVEL PROJECT</span>
+            <span class="cover-symbol">✳</span>
+            <span class="cover-title">THE<br>UNKNOWN</span>
+          </div>
+          <div class="card-body">
+            <p class="card-category">NOVEL · IN DEVELOPMENT</p>
+            <h3>The Unknown</h3>
+            <p>A placeholder for a future novel, waiting for its world to take shape.</p>
+            <button class="read-button"
+              data-title="The Unknown"
+              data-description="This is a placeholder for an original novel. Replace it with your own plot, characters, and opening chapter."
+              data-status="Novel · Planning">Explore project ↗</button>
+          </div>
+        </article>
+
+        <article class="creation-card" data-category="Short story">
+          <div class="cover cover-midnight">
+            <span class="cover-tag">SHORT STORY</span>
+            <span class="cover-symbol">☾</span>
+            <span class="cover-title">AFTER<br>MIDNIGHT</span>
+          </div>
+          <div class="card-body">
+            <p class="card-category">FICTION · PLACEHOLDER</p>
+            <h3>After Midnight</h3>
+            <p>A space reserved for a short story born from your imagination.</p>
+            <button class="read-button"
+              data-title="After Midnight"
+              data-description="Your next short story can live here. Replace this placeholder with your own original writing."
+              data-status="Short story · Placeholder">Explore project ↗</button>
+          </div>
+        </article>
+
+        <article class="creation-card" data-category="Poetry">
+          <div class="cover cover-poetry">
+            <span class="cover-tag">POETRY COLLECTION</span>
+            <span class="cover-symbol">“ ”</span>
+            <span class="cover-title">WORDS<br>UNSAID</span>
+          </div>
+          <div class="card-body">
+            <p class="card-category">POETRY · PLACEHOLDER</p>
+            <h3>Words Unsaid</h3>
+            <p>Poems, emotions, memories, and thoughts turned into words.</p>
+            <button class="read-button"
+              data-title="Words Unsaid"
+              data-description="A future collection for your poems, lyrics, and personal writing."
+              data-status="Poetry · Placeholder">Explore project ↗</button>
+          </div>
+        </article>
+
+        <article class="creation-card" data-category="Comic">
+          <div class="cover cover-cosmos">
+            <span class="cover-tag">SCI-FI UNIVERSE</span>
+            <span class="cover-symbol">✧</span>
+            <span class="cover-title">BEYOND<br>THE STARS</span>
+          </div>
+          <div class="card-body">
+            <p class="card-category">SCI-FI · CONCEPT</p>
+            <h3>Beyond the Stars</h3>
+            <p>A place for future science-fiction, space, and universe-spanning ideas.</p>
+            <button class="read-button"
+              data-title="Beyond the Stars"
+              data-description="Build a science-fiction world with original characters, discoveries, civilizations, and mysteries."
+              data-status="Science fiction · Concept">Explore project ↗</button>
+          </div>
+        </article>
+
+        <article class="creation-card" data-category="Novel">
+          <div class="cover cover-draft">
+            <span class="cover-tag">YOUR NEXT IDEA</span>
+            <span class="cover-symbol">＋</span>
+            <span class="cover-title">A NEW<br>WORLD</span>
+          </div>
+          <div class="card-body">
+            <p class="card-category">YOUR NEXT CREATION</p>
+            <h3>Something new</h3>
+            <p>Your collection can grow whenever a new idea becomes a real project.</p>
+            <button class="read-button"
+              data-title="Something new"
+              data-description="This is your reminder that Astroverse is a growing home for your future creations."
+              data-status="Ready for your next idea">Explore project ↗</button>
+          </div>
+        </article>
+      </div>
+
+      <p class="empty-state" id="empty-state" hidden>
+        No creations found. Try another search.
+      </p>
+    </section>
+
+    <section class="about section" id="about">
+      <p class="eyebrow">BEHIND THE UNIVERSE</p>
+      <h2>One creator. Many worlds.</h2>
+      <p>
+        Astroverse is my personal creative space — a place to build
+        fictional worlds, share original writing, develop comics,
+        and bring ideas to life one project at a time.
+      </p>
+      <a class="secondary-button" href="#home">Back to the beginning ↑</a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#home">astroverse<span>.</span></a>
+    <p>Made with imagination and code.</p>
+    <p>© <span id="year"></span> Astroverse</p>
+  </footer>
+
+  <dialog id="project-dialog" class="project-dialog">
+    <button class="close-dialog" id="close-dialog"
+      aria-label="Close dialog">×</button>
+    <p class="eyebrow" id="dialog-status">PROJECT</p>
+    <h2 id="dialog-title">Project title</h2>
+    <p id="dialog-description"></p>
+    <button class="primary-button" id="done-button">Back to Astroverse</button>
+  </dialog>
+</body>
+</html>
