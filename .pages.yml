@@ -1,0 +1,48 @@
+
+media:
+  input: public/images
+  output: /images
+
+content:
+  - name: novels
+    label: Novels
+    type: collection
+    path: content/novels
+    filename: "{primary}.md"
+    fields:
+      - name: title
+        label: Novel Title
+        type: string
+        required: true
+      - name: cover
+        label: Cover Image
+        type: image
+      - name: description
+        label: Description
+        type: text
+      - name: status
+        label: Publication Status
+        type: select
+        options:
+          values:
+            - Draft
+            - Published
+      - name: body
+        label: Novel Content
+        type: rich-text
+        required: true
+
+  - name: posts
+    label: Posts
+    type: collection
+    path: content/posts
+    filename: "{primary}.md"
+    fields:
+      - name: title
+        label: Post Title
+        type: string
+        required: true
+      - name: body
+        label: Content
+        type: rich-text
+        required: true
